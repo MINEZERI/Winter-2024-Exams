@@ -1,5 +1,5 @@
 // Get day number
-// remove useless code
+// Passed 5 of 5, code is refactored
 
 'use strict';
 
