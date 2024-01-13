@@ -1,15 +1,16 @@
 // Get day number
-// Change identifiers names
+// remove useless code
 
 'use strict';
 
 const DAYS = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat'];
 const parseDay = (dayName) => {
-    let index;
-    for (index = 0; index < DAYS.length; index++) {
-        if (dayName.startsWith(DAYS[index].toLowerCase())) {
+    for (let index=0; index < DAYS.length; index++) {
+        if (dayName.startsWith(DAYS[index])) {
             return index + 1;
         }
     }
     return -1;
 };
+
+module.exports = parseDay;
