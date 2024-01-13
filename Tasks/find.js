@@ -1,5 +1,6 @@
 // Find key by value
-// used for..of instead of for..in
+// find fixed passed 5 of 5
+
 'use strict';
 
 const findProperty = (object, ...desired) => {
