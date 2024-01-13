@@ -1,5 +1,5 @@
 // Return an array without duplicates
-// removed unnecessary return and if
+// duplicate fixed passed 5 of 5
 
 'use strict';
 const duplicate = (string, number) => {
