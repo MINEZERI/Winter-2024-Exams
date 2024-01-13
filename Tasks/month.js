@@ -1,5 +1,5 @@
 // Get month number
-// remove useless code
+// month is fixed passed 7 of 7 
 
 const MONTHS = [
   'jan',
