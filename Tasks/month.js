@@ -1,5 +1,5 @@
 // Get month number
-// renamed identifiers
+// remove useless code
 
 const MONTHS = [
   'jan',
@@ -17,8 +17,7 @@ const MONTHS = [
 ];
 
 month = (monthName) => {
-  const lenght = MONTHS.length;
-  for (let index = 0; index < lenght; index++) {
+  for (let index = 0; index < MONTHS.length; index++) {
     if (monthName.toLowerCase().startsWith(MONTHS[index])) return index + 1;
   }
   return -1;
