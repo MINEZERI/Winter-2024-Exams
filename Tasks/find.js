@@ -1,10 +1,10 @@
 // Find key by value
-// fixed if statement and deleted useless conditions
+// used for..of instead of for..in
 'use strict';
 
 const findProperty = (object, ...desired) => {
-  for (let name in object) {
-     if (object[name] === desired[0]){
+  for (let [name, value] of Object.entries(object)) {
+     if (value === desired[0]){
         return name;
     }
   }
