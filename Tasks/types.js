@@ -1,19 +1,19 @@
 // Count types in an array
-// remove useless code
+// rename variables and functions 
 
 'use strict';
 
-const types_ = function (s) {
-  const types_ = {
+const types = function (list) {
+  const types = {
     number: 0,
     string: 0,
     boolean: 0,
   };
-  for (const i of s) {
-    const t = typeof i;
-    types_[t]++;
+  for (const element of list) {
+    const elementType = typeof element;
+    types[elementType]++;
   }
-  return types_;
+  return types;
 };
 
-module.exports = types_;
+module.exports = types;
