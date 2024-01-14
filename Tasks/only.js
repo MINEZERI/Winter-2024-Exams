@@ -1,14 +1,13 @@
 // Copy only listed values from dict
-// use 'use strict'; , 'const', 'let'
-
+// change loop to for..of
 'use strict';
 
 const only = (object, ...copy) => {
-  Object.keys(object).forEach((key) => {
+  for (const key of Object.keys(object)) {
     if (!copy.includes(key)) {
       delete object[key];
     }
-  });
+  }
   return object;
 };
 
