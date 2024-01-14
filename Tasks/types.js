@@ -1,5 +1,5 @@
 // Count types in an array
-// changed function to arrow function
+// types fixed passed 4 of 4
 'use strict';
 
 const types = (list) => {
