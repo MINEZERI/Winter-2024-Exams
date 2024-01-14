@@ -1,12 +1,15 @@
 // Split string into array by the first occurrence of separator
+// use 'use strict'; , 'const', 'let'
+// renaming
+'use strict';
 
-SectionString = (s, t) => {
-  i = s.indexOf(t);
-  if (i < 0 || t == '') {
-    return [s, ''];
+const sectionString = (sentence, separator) => {
+  const index = sentence.indexOf(separator);
+  if (index < 0 || separator == '') {
+    return [sentence, ''];
   } else {
-    return [s.slice(0, i), s.slice(i + t.length)];
+    return [sentence.slice(0, index), sentence.slice(index + separator.length)];
   }
 };
 
-module.exports = SectionString;
+module.exports = sectionString;
