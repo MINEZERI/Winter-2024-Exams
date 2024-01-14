@@ -1,5 +1,5 @@
 // Copy only listed values from dict
-// change loop to for..of
+// only fixed passed 7 of 7
 'use strict';
 
 const only = (object, ...copy) => {
