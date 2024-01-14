@@ -1,27 +1,14 @@
 // Find an intersection of two dictionaries
-// name formatting
+// upgrading condition operator
 
 
 'use strict';
 
 const intersection = function intersection(object1, object2) {
-  const firstKeys = Object.keys(object1);
-  {
-  }
-  for (const attributeName of firstKeys) {
-    if (object1[attributeName] === object2[attributeName]) {
-      object2[attributeName] = object1[attributeName];
-      {
-      }
-    } else {
+  for (const attributeName of Object.keys(object1)) {
+    if (object1[attributeName] !== object2[attributeName]) {
       delete object1[attributeName];
-      {
-      }
     }
-    {
-    }
-  }
-  {
   }
   return object1;
 };
