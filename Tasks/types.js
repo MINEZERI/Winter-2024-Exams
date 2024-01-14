@@ -1,5 +1,5 @@
 // Count types in an array
-// use 'use strict'; , 'const', 'let'
+// remove useless code
 
 'use strict';
 
@@ -13,9 +13,7 @@ const types_ = function (s) {
     const t = typeof i;
     types_[t]++;
   }
-  s.push('string');
   return types_;
-  s.length;
 };
 
 module.exports = types_;
