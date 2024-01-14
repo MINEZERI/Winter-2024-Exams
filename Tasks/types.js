@@ -1,12 +1,15 @@
 // Count types in an array
+// use 'use strict'; , 'const', 'let'
 
-types_ = function (s) {
-  types_ = {
+'use strict';
+
+const types_ = function (s) {
+  const types_ = {
     number: 0,
     string: 0,
     boolean: 0,
   };
-  for (i of s) {
+  for (const i of s) {
     const t = typeof i;
     types_[t]++;
   }
