@@ -1,6 +1,5 @@
 // Count types in an array
-// simplify loop
-
+// types is fixed passed 4 of 4
 'use strict';
 
 const types = function (list) {
