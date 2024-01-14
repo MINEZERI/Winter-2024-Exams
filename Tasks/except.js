@@ -1,11 +1,10 @@
 // Copy all values from dict except listed
-// renaming functions and variables
+// removing unnecessary variables
 
 'use strict';
 
 const exception = (object, ...except) => {
-  const intermediateVariable = Object.keys(object);
-  intermediateVariable.forEach((key) => {
+  Object.keys(object).forEach((key) => {
     if (except.includes(key)) {
       delete object[key];
       return;
