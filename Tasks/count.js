@@ -1,5 +1,5 @@
 // Sum all number values in dict
-// removed unnecessary variable
+// count fixed passed 6 of 6
 'use strict';
 
 const count = (obj) => {
