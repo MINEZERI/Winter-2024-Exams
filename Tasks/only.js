@@ -1,13 +1,14 @@
 // Copy only listed values from dict
-// upgrading if statement
+// rename variables
 
-only = (W, ...only) => {
-  Object.keys(W).forEach((Z) => {
-    if (!only.includes(Z)) {
-      delete W[Z];
-    } 
+
+only = (object, ...copy) => {
+  Object.keys(object).forEach((key) => {
+    if (!copy.includes(key)) {
+      delete object[key];
+    }
   });
-  return W;
+  return object;
 };
 
 module.exports = only;
