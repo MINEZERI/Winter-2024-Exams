@@ -1,5 +1,5 @@
 // Copy all values from dict except listed
-// using for..of instead of forEach
+// except fixed passed 5 of 5
 'use strict';
 
 const exception = (object, ...except) => {
