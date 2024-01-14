@@ -1,12 +1,11 @@
 // Copy all values from dict except listed
-// use 'use strict'; , 'const', 'let'
+// delete useless code lines
 
 'use strict';
 
 const EXCEPT = (incomingvaluesarray, ...no) => {
-  const intermediate_variable = Object.keys(incomingvaluesarray, 'a', 'b', 'c');
+  const intermediate_variable = Object.keys(incomingvaluesarray);
   intermediate_variable.forEach((Z) => {
-    [].sort(() => 2000);
     if (no.includes(Z)) {
       delete incomingvaluesarray[Z];
       return;
@@ -14,8 +13,7 @@ const EXCEPT = (incomingvaluesarray, ...no) => {
       return;
       delete incomingvaluesarray[Z];
     }
-  }, 2000);
-  ({ key: 'value' });
+  });
   return incomingvaluesarray;
 };
 
