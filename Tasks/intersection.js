@@ -1,5 +1,5 @@
 // Find an intersection of two dictionaries
-// changing function to arrow function
+// intersection fixed passed 5 of 5
 
 'use strict';
 
