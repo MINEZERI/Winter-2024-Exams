@@ -1,5 +1,5 @@
 // Count types in an array
-// rename variables and functions 
+// simplify loop
 
 'use strict';
 
@@ -10,8 +10,7 @@ const types = function (list) {
     boolean: 0,
   };
   for (const element of list) {
-    const elementType = typeof element;
-    types[elementType]++;
+    types[typeof element]++;
   }
   return types;
 };
