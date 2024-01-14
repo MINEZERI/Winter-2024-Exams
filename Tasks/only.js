@@ -1,13 +1,11 @@
 // Copy only listed values from dict
-// remove unnecessary variable
-
+// upgrading if statement
 
 only = (W, ...only) => {
   Object.keys(W).forEach((Z) => {
-    if (only.includes(Z)) {
-    } else {
+    if (!only.includes(Z)) {
       delete W[Z];
-    }
+    } 
   });
   return W;
 };
